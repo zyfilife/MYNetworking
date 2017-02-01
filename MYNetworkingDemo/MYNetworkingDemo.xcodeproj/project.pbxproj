@@ -7,14 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		409BECCE1E417D460074C168 /* MYNetworkingWithAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BECCD1E417D460074C168 /* MYNetworkingWithAlamofire.swift */; };
+		409BECD31E417E360074C168 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BECD11E417DFA0074C168 /* AFNetworking.framework */; };
+		409BECD41E417E360074C168 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 409BECD11E417DFA0074C168 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		409BECD51E417E390074C168 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BECCF1E417DD70074C168 /* Alamofire.framework */; };
+		409BECD61E417E390074C168 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 409BECCF1E417DD70074C168 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		409BECD81E417E840074C168 /* MYNetworkingWithAFNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BECD71E417E840074C168 /* MYNetworkingWithAFNetworking.swift */; };
+		409BECDA1E417F290074C168 /* MYNetworkingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BECD91E417F290074C168 /* MYNetworkingConfig.swift */; };
+		409BECDD1E417F6A0074C168 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BECDC1E417F6A0074C168 /* UIKit.framework */; };
+		409BECDF1E417F720074C168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BECDE1E417F720074C168 /* Foundation.framework */; };
 		40ED3EED1E403F3B00A495A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ED3EEC1E403F3B00A495A6 /* AppDelegate.swift */; };
 		40ED3EEF1E403F3B00A495A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ED3EEE1E403F3B00A495A6 /* ViewController.swift */; };
 		40ED3EF21E403F3B00A495A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40ED3EF01E403F3B00A495A6 /* Main.storyboard */; };
 		40ED3EF41E403F3B00A495A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40ED3EF31E403F3B00A495A6 /* Assets.xcassets */; };
 		40ED3EF71E403F3B00A495A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40ED3EF51E403F3B00A495A6 /* LaunchScreen.storyboard */; };
+		40ED3F0A1E4054C000A495A6 /* cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 40ED3F091E4054C000A495A6 /* cartfile */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		40ED3F131E4059F900A495A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				409BECD41E417E360074C168 /* AFNetworking.framework in Embed Frameworks */,
+				409BECD61E417E390074C168 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		409BECCD1E417D460074C168 /* MYNetworkingWithAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYNetworkingWithAlamofire.swift; sourceTree = "<group>"; };
+		409BECCF1E417DD70074C168 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		409BECD11E417DFA0074C168 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		409BECD71E417E840074C168 /* MYNetworkingWithAFNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYNetworkingWithAFNetworking.swift; sourceTree = "<group>"; };
+		409BECD91E417F290074C168 /* MYNetworkingConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYNetworkingConfig.swift; sourceTree = "<group>"; };
+		409BECDC1E417F6A0074C168 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		409BECDE1E417F720074C168 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40ED3EE91E403F3B00A495A6 /* MYNetworkingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYNetworkingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40ED3EEC1E403F3B00A495A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40ED3EEE1E403F3B00A495A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +54,7 @@
 		40ED3EF31E403F3B00A495A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40ED3EF61E403F3B00A495A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40ED3EF81E403F3B00A495A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40ED3F091E4054C000A495A6 /* cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cartfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +62,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409BECDF1E417F720074C168 /* Foundation.framework in Frameworks */,
+				409BECDD1E417F6A0074C168 /* UIKit.framework in Frameworks */,
+				409BECD31E417E360074C168 /* AFNetworking.framework in Frameworks */,
+				409BECD51E417E390074C168 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		409BECCC1E417D2D0074C168 /* MYNetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				409BECCD1E417D460074C168 /* MYNetworkingWithAlamofire.swift */,
+				409BECD71E417E840074C168 /* MYNetworkingWithAFNetworking.swift */,
+				409BECD91E417F290074C168 /* MYNetworkingConfig.swift */,
+			);
+			path = MYNetWorking;
+			sourceTree = "<group>";
+		};
+		409BECDB1E417F6A0074C168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				409BECD11E417DFA0074C168 /* AFNetworking.framework */,
+				409BECCF1E417DD70074C168 /* Alamofire.framework */,
+				409BECDE1E417F720074C168 /* Foundation.framework */,
+				409BECDC1E417F6A0074C168 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		40ED3EE01E403F3B00A495A6 = {
 			isa = PBXGroup;
 			children = (
 				40ED3EEB1E403F3B00A495A6 /* MYNetworkingDemo */,
 				40ED3EEA1E403F3B00A495A6 /* Products */,
+				409BECDB1E417F6A0074C168 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,16 +119,10 @@
 				40ED3EF31E403F3B00A495A6 /* Assets.xcassets */,
 				40ED3EF51E403F3B00A495A6 /* LaunchScreen.storyboard */,
 				40ED3EF81E403F3B00A495A6 /* Info.plist */,
-				40ED3EFE1E403F5B00A495A6 /* MYNetworking */,
+				40ED3F091E4054C000A495A6 /* cartfile */,
+				409BECCC1E417D2D0074C168 /* MYNetWorking */,
 			);
 			path = MYNetworkingDemo;
-			sourceTree = "<group>";
-		};
-		40ED3EFE1E403F5B00A495A6 /* MYNetworking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MYNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +135,7 @@
 				40ED3EE51E403F3B00A495A6 /* Sources */,
 				40ED3EE61E403F3B00A495A6 /* Frameworks */,
 				40ED3EE71E403F3B00A495A6 /* Resources */,
+				40ED3F131E4059F900A495A6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +188,7 @@
 			files = (
 				40ED3EF71E403F3B00A495A6 /* LaunchScreen.storyboard in Resources */,
 				40ED3EF41E403F3B00A495A6 /* Assets.xcassets in Resources */,
+				40ED3F0A1E4054C000A495A6 /* cartfile in Resources */,
 				40ED3EF21E403F3B00A495A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +202,9 @@
 			files = (
 				40ED3EEF1E403F3B00A495A6 /* ViewController.swift in Sources */,
 				40ED3EED1E403F3B00A495A6 /* AppDelegate.swift in Sources */,
+				409BECD81E417E840074C168 /* MYNetworkingWithAFNetworking.swift in Sources */,
+				409BECDA1E417F290074C168 /* MYNetworkingConfig.swift in Sources */,
+				409BECCE1E417D460074C168 /* MYNetworkingWithAlamofire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +328,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6PV3E3Y4LF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MYNetworkingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuyifeng.MYNetworkingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +346,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6PV3E3Y4LF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MYNetworkingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuyifeng.MYNetworkingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +378,7 @@
 				40ED3EFD1E403F3B00A495A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

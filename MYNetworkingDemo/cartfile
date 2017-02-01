@@ -1,0 +1,5 @@
+github "AFNetworking/AFNetworking"
+
+github "ibireme/YYModel"
+
+github "Alamofire/Alamofire" ~> 4.3
