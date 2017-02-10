@@ -14,16 +14,13 @@ class MYNetworkingWithAFNetworking {
     
     let kAcceptableContentTypes:Set<String> = ["application/json",
                                                "text/html",
-                                               "text/plain",
-                                               "text/javascript",
-                                               "text/xml",
-                                               "image/*"]
+                                               "text/plain"]
     
     var domain: String {
         return ""
     }
     
-    var successErrorCode = 0
+    static let successErrorCode = 0
     
     var timeoutInterval: TimeInterval {
         get {
@@ -156,7 +153,7 @@ class MYNetworkingWithAFNetworking {
         }
         
         if let errorCode = dictionary["error"] as? Int {
-            if errorCode != self.successErrorCode {
+            if errorCode != MYNetworkingWithAFNetworking.successErrorCode {
                 let customError = NSError(domain: self.domain, code: errorCode, userInfo: [NSLocalizedDescriptionKey:  serversMessage])
                 print("AppServers Error: \(serversMessage)" + "code: \(errorCode)")
                 return customError
